@@ -23,7 +23,7 @@ for (let i = 0; i < numbers.length; i++) {
     }
 }
 // Q: What is the time complexity of of this solution?
-// ANSWER: O(n)
+// ANSWER: O(1)
 
 
 // Q: Could you come up with a solution that has a better time complexity? If so, what is that time complexity?
@@ -47,7 +47,7 @@ function printB(number) {
   }
 }
 // Q: What is the time complexity of the function?
-// ANSWER: 0(1)
+// ANSWER: 0(n)
 
 
 // 4) -------------------------------------------------------
@@ -77,7 +77,7 @@ let newNumbersA = numbers.filter((num) => {
   return num < 5
 })
 // Q: What is the time complexity of the filter higher-order function?
-// ANSWER: O(1)
+// ANSWER: O(n)
 
 
 // 7) -------------------------------------------------------
