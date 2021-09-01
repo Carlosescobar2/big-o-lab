@@ -85,7 +85,7 @@ let newNumbersB = numbers.map((num) => {
   return num * 3
 })
 // Q: What is the time complexity of the map higher-order function?
-// ANSWER: O(1)     ****Hey scott
+// ANSWER: O(n)
 
 
 // 8) -------------------------------------------------------
@@ -93,7 +93,7 @@ function removeNum() {
     numbers.splice(3,1)
 }
 // Q: What is the time complexity of the function?
-// ANSWER: 0(1)  ***hey Scott
+// ANSWER: 0(n) 
 
 
 // 9) -------------------------------------------------------
@@ -120,8 +120,7 @@ function printFirstTwoNames(array) {
 }
 
 // Q: What is the time complexity of the function? Could we write this function differently to accomplish the goal of the function in a faster time complexity?
-// ANSWER:
-
+// ANSWER: O(1) no there's not a way to make it faster it is already fast. 
 
 // Advanced Challenges
 // Solve the following challenge. Once complete, determine the time complexity of your solution. Consider if there are ways to solve the challenge with a better time complexity.
@@ -135,7 +134,8 @@ function printFirstTwoNames(array) {
 
 // Starting Code:
 function squareEveryDigit(number) {
-    
+    return +Array.from(number.toString(), x => x * x)
+    .join('');
 }
 
 squareEveryDigit(946) // When running 946, you should see a result of 811636
